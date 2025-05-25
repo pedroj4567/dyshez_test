@@ -3,7 +3,7 @@ import {
   InputField,
   PhoneInputField,
   TermsCheckbox,
-} from "@/app/shared/components";
+} from "@/app/ui/components";
 import AuthLayout from "../AuthLayout";
 import AuthCard from "../components/AuthCard";
 import AuthTabs from "../components/AuthTabs";
@@ -13,7 +13,7 @@ import { FiSmartphone, FiPhone } from "react-icons/fi";
 import { TbWorld } from "react-icons/tb";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { RxLockClosed } from "react-icons/rx";
-import { Arrow } from "@/app/shared/components/icons";
+import { Arrow } from "@/app/ui/components/icons";
 
 const page = () => {
   return (

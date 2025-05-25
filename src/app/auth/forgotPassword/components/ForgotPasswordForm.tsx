@@ -1,8 +1,8 @@
-import { Button, InputField } from "@/app/shared/components";
+import { Button, InputField } from "@/app/ui/components";
 import Link from "next/link";
 import React from "react";
 import { MdOutlineMailOutline } from "react-icons/md";
-import { Arrow } from "../../../shared/components/icons";
+import { Arrow } from "../../../ui/components/icons";
 
 function ForgotPasswordForm() {
   return (
