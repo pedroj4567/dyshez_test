@@ -1,6 +1,21 @@
 import { FaPlus } from "react-icons/fa";
 import GalleryThumbnail from "./GalleryThumbail";
 
+type ImageType = {
+  url: string;
+  filePath: string;
+};
+
+type GalleryBarProps = {
+  images: ImageType[];
+  selectedImage: ImageType | null;
+  onImageSelect: (img: ImageType) => void;
+  onImageDelete: (img: ImageType) => void;
+  onUploadClick: () => void;
+  fileInputRef: React.RefObject<HTMLInputElement | null>;
+  onImageUpload: (e: React.ChangeEvent<HTMLInputElement>) => void;
+};
+
 export default function GalleryBar({
   images,
   selectedImage,
@@ -9,7 +24,7 @@ export default function GalleryBar({
   onUploadClick,
   fileInputRef,
   onImageUpload,
-}) {
+}: GalleryBarProps) {
   return (
     <div className="flex-1 h-full p-6 flex flex-col">
       <div
@@ -34,7 +49,7 @@ export default function GalleryBar({
           <GalleryThumbnail
             key={idx}
             img={img}
-            isActive={selectedImage === img}
+            isActive={selectedImage?.filePath === img.filePath}
             onSelect={() => onImageSelect(img)}
             onDelete={() => onImageDelete(img)}
           />

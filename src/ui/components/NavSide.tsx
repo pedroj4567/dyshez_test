@@ -5,6 +5,7 @@ import { FaDog } from "react-icons/fa";
 import { IoMdLogOut } from "react-icons/io";
 import { FaImage } from "react-icons/fa6";
 import { usePathname } from "next/navigation";
+import { useLogout } from "@/hooks/useLogout";
 
 const navItems = [
   { icon: <RiShoppingBagLine />, path: "/orders" },
@@ -13,6 +14,7 @@ const navItems = [
 
 export default function NavSide() {
   const pathname = usePathname();
+  const { handleLogout } = useLogout();
 
   return (
     <nav className="w-[70px] bg-white border-r-2 border-gray-100 flex flex-col items-center h-screen fixed">
@@ -58,6 +60,7 @@ export default function NavSide() {
             text-gray-400 hover:text-pink-600
             transition-all duration-200
           "
+          onClick={handleLogout}
         >
           <IoMdLogOut size={30} />
         </button>

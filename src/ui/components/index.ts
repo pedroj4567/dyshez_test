@@ -10,6 +10,7 @@ import LanguageSwitcher from "./LanguageSwitcher";
 import Table from "./Table";
 import TableFilters from "./TableFilters";
 import TablePagination from "./TablePagination";
+import { Spinner } from "./Spinner";
 
 export {
   Button,
@@ -24,4 +25,5 @@ export {
   Table,
   TableFilters,
   TablePagination,
+  Spinner,
 };

@@ -5,6 +5,10 @@ export type Order = {
   time: Date | string;
   mode: string;
   total: number | string;
-  payment: string;
+  payment_method: string;
   status: "Accepted" | "Rejected";
+  clients: {
+    name: string;
+    lastname: string;
+  };
 };

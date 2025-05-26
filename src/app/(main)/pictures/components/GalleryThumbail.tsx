@@ -1,12 +1,20 @@
 import { FaRegTrashCan } from "react-icons/fa6";
 import Image from "next/image";
+import { ImageType } from "../page";
+
+type GalleryThumbnailProps = {
+  img: ImageType;
+  isActive: boolean;
+  onSelect: () => void;
+  onDelete: () => void;
+};
 
 export default function GalleryThumbnail({
   img,
   isActive,
   onSelect,
   onDelete,
-}) {
+}: GalleryThumbnailProps) {
   return (
     <div
       className={`relative w-[120px] h-[120px] rounded-md overflow-hidden border-2 transition flex-shrink-0 cursor-pointer
