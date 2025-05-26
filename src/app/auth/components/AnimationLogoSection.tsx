@@ -1,6 +1,6 @@
-import { LanguageSwitcher } from "@/ui/components";
 import Image from "next/image";
 import { Circle, Dyamonds, SmallCircle, Waves } from "./shapes";
+import { LanguageSwitcher } from "@/ui/components";
 
 const AnimationLogoSection = () => {
   return (

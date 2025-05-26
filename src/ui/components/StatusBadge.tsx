@@ -1,7 +1,9 @@
-export default function StatusBadge({ status }) {
+import { Order } from "@/types/order.type";
+
+export default function StatusBadge({ status }: { status: Order["status"] }) {
   const statusStyles = {
-    Accepted: "bg-green-50 text-green-600 border border-green-200",
-    Rejected: "bg-red-50 text-red-500 border border-red-200",
+    Accepted: "bg-green-500/20 text-green-700 ",
+    Rejected: "bg-red-50 text-red-500  ",
   };
   return (
     <span

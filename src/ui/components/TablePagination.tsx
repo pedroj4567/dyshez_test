@@ -5,7 +5,7 @@ export default function TablePagination({
   totalPages,
 }: TablePaginationProps) {
   return (
-    <div className="flex justify-center items-center gap-2 mt-6">
+    <div className="flex justify-center items-center gap-2 py-5 border-t-2 border-slate-200">
       <button className="w-8 h-8 flex items-center justify-center rounded-full text-gray-400 hover:bg-gray-100">
         &lt;
       </button>
