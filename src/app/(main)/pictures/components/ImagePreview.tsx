@@ -2,7 +2,7 @@ import Image from "next/image";
 import { ImageType } from "../page";
 
 export default function ImagePreviews(
-  { selectedImage }: { selectedImage: ImageType },
+  { selectedImage }: { selectedImage: ImageType | null },
   className = ""
 ) {
   return (
