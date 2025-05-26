@@ -1,6 +1,10 @@
 import Image from "next/image";
+import { ImageType } from "../page";
 
-export default function ImagePreviews({ selectedImage }, className = "") {
+export default function ImagePreviews(
+  { selectedImage }: { selectedImage: ImageType },
+  className = ""
+) {
   return (
     <div
       className={`w-1/2 bg-gray-100 p-8 flex justify-center items-center h-full ${className}`}
