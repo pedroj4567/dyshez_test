@@ -83,7 +83,7 @@ const page = () => {
         <h2>Orders</h2>
       </div>
 
-      <div className="mt-5   shadow-2xl rounded-2xl ">
+      <div className="mt-10 shadow-2xl rounded-2xl">
         <TableFilters />
         <Table data={orders} />
         <TablePagination currentPage={1} totalPages={6} />
