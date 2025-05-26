@@ -1,4 +1,4 @@
-import { LanguageSwitcher } from "@/app/ui/components";
+import { LanguageSwitcher } from "@/ui/components";
 import Image from "next/image";
 import { Circle, Dyamonds, SmallCircle, Waves } from "./shapes";
 

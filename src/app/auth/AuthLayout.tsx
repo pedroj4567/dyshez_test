@@ -1,6 +1,6 @@
 "use client";
 import { AnimatePresence, motion } from "framer-motion";
-import { Logo } from "../ui/components";
+import { Logo } from "../../ui/components";
 import AnimationLogoSection from "./components/AnimationLogoSection";
 import { usePathname } from "next/navigation";
 

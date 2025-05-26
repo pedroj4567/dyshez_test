@@ -1,15 +1,14 @@
 import { ReactNode } from "react";
-import MainNav from "@/components/navigation/main-nav";
-import { Sidebar } from "@/components/navigation/sidebar";
+import { NavSide } from "../../ui/components";
 
-export default function SharedLayout({ children }: { children: ReactNode }) {
+export default function MainLayout({ children }: { children: ReactNode }) {
   return (
-    <div className="flex min-h-screen flex-col">
-      <MainNav />
-      <div className="flex flex-1">
-        <Sidebar />
-        <main className="flex-1 p-6">{children}</main>
+    <div className="flex min-h-screen">
+      <div className="w-[70px] flex-shrink-0">
+        <NavSide />
       </div>
+
+      <main className="flex-1 overflow-auto">{children}</main>
     </div>
   );
 }

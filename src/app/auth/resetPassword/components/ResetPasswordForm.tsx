@@ -1,8 +1,8 @@
-import { Button, InputField } from "@/app/ui/components";
+import { Button, InputField } from "@/ui/components";
 import Link from "next/link";
 import React from "react";
 import { RxLockClosed } from "react-icons/rx";
-import { Arrow } from "../../../ui/components/icons";
+import { Arrow } from "../../../../ui/components/icons";
 
 const ResetPasswordForm = () => {
   return (

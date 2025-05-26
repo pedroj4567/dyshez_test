@@ -1,10 +1,10 @@
 "use client";
 import { useState } from "react";
-import { Button, InputField } from "@/app/ui/components";
+import { Button, InputField } from "@/ui/components";
 import { MdAlternateEmail } from "react-icons/md";
 import { HiLockClosed } from "react-icons/hi";
 import Link from "next/link";
-import { Arrow } from "../../ui/components/icons";
+import { Arrow } from "../../../ui/components/icons";
 
 export default function LoginForm() {
   const [email, setEmail] = useState("");
